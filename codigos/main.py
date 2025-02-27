@@ -180,7 +180,6 @@ print(f"A média ponderada destes valores é: {media}")
 
 """
 
-#ex027
 
 
 
