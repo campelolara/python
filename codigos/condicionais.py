@@ -150,9 +150,7 @@ else:
     print(f"O ano {ano} NÃO é bissexto")
 
 ########################################################
-"""
-
-#ex012 = salário 
+#ex012 = Aumento de 10% no salário ou NADA
 salario = float(input("Digite o seu salário: "))
 
 if salario >= 1000:
@@ -161,9 +159,86 @@ else:
     salario = salario * 1.10
     print(f"Seu novo salário é {salario:.2f}")
 
+########################################################
+#ex013 = Se o número ta dentro do intervalo
+num = int(input("Digite um número: "))
 
+if num >= 1 and num <= 100:
+    print(f"{num} está dentro do intervalo de 1 a 100")
+else:
+    print(f"{num} NÃO está dentro do intervalo de 1 a 100")
 
 ########################################################
+#ex014 = Está frio, quente ou moderado?
+temperatura = float(input("Digite a temperatura: "))
+
+if temperatura < 15:
+    print("Está frio")
+elif temperatura >= 15 and temperatura <= 25:
+    print("Está moderado")
+else:
+    print("Está quente")
+
+########################################################
+#ex015 = Se é alto
+altura = float(input("Digite sua altura:"))
+
+if altura >= 1.80:
+    print("Você é alto")
+else:
+    print("Você é baixo zé")
+
+########################################################
+#ex016 = Saudação
+pronome = input("Digite o seu pronome (ele/ela/elu): ").lower()
+
+if pronome == "ele":
+    print("Seja bem vindo!")
+elif pronome == "ela":
+    print("seja bem vinda!")
+else:
+    print("Seja bem vindx!")
+ 
+########################################################
+#ex017 = Menu
+
+print("-------------MENU-------------")
+print("1. Cadastrar")
+print("2. Consultar")
+print("3. Atualizar")
+print("4. Excluir")
+
+escolha = int(input("Digite um número correspondente ao que deseja: "))
+
+if escolha == 1:
+    print("Área de Cadastro")
+elif escolha == 2:
+    print("Área de Consulta")
+elif escolha == 3:
+    print("Área de Atualização")
+elif escolha == 4:
+    print("Área de exclusão")
+else:
+    print("Digite um número correspondente!")
+
+"""
+########################################################
+#ex019 = Pontuação de um jogo
+
+pontuacao = int(input("Digite sua pontuação: "))
+
+if pontuacao < 50:
+    print("Ruim")
+elif pontuacao >= 50 and pontuacao <= 70:
+    print("Regular")
+elif pontuacao >= 71 and pontuacao <= 90:
+    print("Bom")
+elif pontuacao > 90:
+    print("Excelente")
+else:
+    print("Não entendi!")
+
+
 """
 #Verificar a Coordenada
 x = float(input("Digite o valor do eixo x: "))
