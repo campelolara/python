@@ -1,3 +1,0 @@
-print = exibe msg na tela
-input = entrada de dados
-
