@@ -47,15 +47,6 @@ def deMaiorDeMenor(idade):
     else:
         print(f"Você possui {idade} anos, ainda é de menor")
 
-#Aprovado, reprovado ou de recuperação
-def situacaoAluno(nota):
-    if nota >= 6:
-        print("Você está aprovado!")
-    elif nota < 6 and nota > 4:
-        print("Você está em recuperação!")
-    else:
-        print("Você está reprovado!")
-
 #Vogal ou Consoante
 def vogalConsoante(letra):
     vogais = ['a', 'e', 'i', 'o', 'u']
@@ -168,13 +159,12 @@ print("3. Se é múltiplo de 3")
 print("4. Se é maior, menor ou igual")
 print("5. Maior número")
 print("6. Maior ou menor de idade")
-print("7. Aprovado, reprovado ou de recuperação")
-print("8. Vogal ou Consoante")
-print("9. Nome do dia da semana")
-print("10. Dias do mês")
-print("11. Se o ano é bissexto")
-print("12. Pontuação de um  jogo")
-print("13. Verificar Quandrante com Coordenadas")
+print("7. Vogal ou Consoante")
+print("8. Nome do dia da semana")
+print("9. Dias do mês")
+print("10. Se o ano é bissexto")
+print("11. Pontuação de um  jogo")
+print("12. Verificar Quandrante com Coordenadas")
 
 escolha = int(input("Digite um numero: "))
 
@@ -206,30 +196,26 @@ elif escolha == 6:
     idade = int(input("Digite sua idade: "))
     deMaiorDeMenor(idade)
 elif escolha == 7:
-    print("---Aprovado, Reprovado ou de recuperação---")
-    nota = float(input("Digite sua nota: "))
-    situacaoAluno(nota)
-elif escolha == 8:
     print("------Vogal ou Consoante-------")
     letra = input("Digite uma letra: ").lower()
     vogalConsoante(letra)
-elif escolha == 9:
+elif escolha == 8:
     print("------Nome do dia da semana-------")
     num = int(input("Digite o dia da semana (1 a 7): "))
     diaSemana(num)
-elif escolha == 10:
-    print("----------Dias do mês-----------")
+elif escolha == 9:
+    print("---------Dias do mês-----------")
     num = int(input("Digite o mês (1 a 12): "))
     diaMes(num)
-elif escolha == 11:
+elif escolha == 10:
     print("----------Ano Bissexto-----------")
     ano = int(input("Digite o ano: "))
     anoBissexto(ano)
-elif escolha == 12:
+elif escolha == 11:
     print("------Pontuação de um jogo-------")
     pontuacao = int(input("Digite sua pontuação: "))
     pontuacaoJogo(pontuacao)
-elif escolha == 13:
+elif escolha == 12:
     print("------Verificar Coordenada-------")
     x = float(input("Digite o valor do eixo x: "))
     y = float(input("Digite o valor do eixo y: "))
