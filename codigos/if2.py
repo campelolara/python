@@ -38,13 +38,13 @@ def bhaskara():
 #ex003 = Operadora - minutos consumidos
 def operadora():
     minutos = int(input("Digite a quantidade de minutos: "))
-    plano = 50
 
     if minutos <= 100:
-        print(f"Valor a pagar: ${plano}")
+        plano = 50
     else:
-        plano += (minutos - 100) * 2
-        print(f"Valor a pagar: ${plano}")
+        plano = 50 + ((minutos-100) * 2)
+
+    print(f"Valor a pagar: ${plano}")
 
 #ex004 = Troco
 def troco():
@@ -79,37 +79,23 @@ def temperatura():
     
 #ex006 = Lanchonete
 def lanchonete():
-    cod01 = 5.00
-    cod02 = 3.50
-    cod03 = 4.80
-    cod04 = 8.90
-    cod05 = 7.32
-
-    print("Código e Preço do produto")
-    print(f"1 = {cod01}")
-    print(f"2 = {cod02}")
-    print(f"3 = {cod03}")
-    print(f"4 = {cod04}")
-    print(f"5 = {cod05}")
-
     codigo = int(input("Código do produto comprado: "))
     quant = int(input("Quantidade comprada: "))
 
     if codigo == 1:
-        valor = cod01 * quant
-        print(f"Valor a pagar: {valor}")
+        valor = 5.00
     elif codigo == 2:
-        valor = cod02 * quant
-        print(f"Valor a pagar: {valor}")
+        valor = 3.50
     elif codigo == 3:
-        valor = cod03 * quant
-        print(f"Valor a pagar: {valor}")
+        valor = 4.80
     elif codigo == 4:
-        valor = cod04 * quant
-        print(f"Valor a pagar: {valor}")
+        valor = 8.90
     elif codigo == 5:
-        valor = cod05 * quant
-        print(f"Valor a pagar: {valor}")
+        valor = 7.32
+
+    valor_total = valor * quant
+    print(f"Valor a pagar: {valor_total}")
+
 
 #ex007 = Multiplos
 def multiplos():
@@ -121,7 +107,37 @@ def multiplos():
     else: 
         print("NÃO são múltiplos")
 
+#ex008 = Aumento
+def aumento():
+    salario = float(input("Digite o salário da pessoa: "))
 
+    if salario <= 1000:
+        percentual = 20
+    elif salario > 1000 and salario <= 3000:
+        percentual = 15
+    elif salario > 3000 and salario <= 8000:
+        percentual = 10
+    else:
+        percentual = 5
+
+    aumento = (percentual / 100) * salario
+    novo_salario = aumento + salario
+
+    print(f"Novo salário: R$ {novo_salario}")
+    print(f"Aumento: R$ {aumento}")
+    print(f"Porcentagem:  {percentual} %")
+
+#ex009 = Tempo de Jogo
+def tempoJogo():
+    inicio = int(input("Hora inicial: "))
+    fim = int(input("Hora final: "))
+
+    if inicio < fim:
+        hora_total = fim - inicio
+    else:
+       hora_total = (24 - inicio) + fim
+    
+    print(f"O JOGO DUROU {hora_total} HORA(S)")
 
 
 ### CORPO PRINCIPAL
@@ -133,6 +149,8 @@ print("4. Troco")
 print("5. Temperatura")
 print("6. Lanchonete")
 print("7. São Múltiplos?")
+print("8. Aumento Salarial")
+print("9. Tempo de Jogo")
 
 escolha = int(input("Digite um numero: "))
 
@@ -163,4 +181,12 @@ elif escolha == 6:
 elif escolha == 7:
     print("----São Múltiplos?----")
     multiplos()
+
+elif escolha == 8:
+    print("----Aumento Salarial----")
+    aumento()
+
+elif escolha == 9:
+    print("----Tempo de Jogo----")
+    tempoJogo()
 
