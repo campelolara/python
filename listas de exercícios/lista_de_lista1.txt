@@ -1,0 +1,64 @@
+1. Dada a lista numeros = [4, 7, 2, 9, 5], adicione o nÃºmero 10 ao final da lista usando append().
+
+2. Crie uma lista vazia frutas = [] e adicione as frutas "maÃ§Ã£", "banana" e "uva" usando append().
+
+3. Dada a lista numeros = [10, 20, 30], insira o nÃºmero 15 na segunda posiÃ§Ã£o usando insert().
+
+4. Dada a lista nomes = ["Ana", "Carlos", "Beatriz", "Daniel"], remova "Carlos" usando remove().
+
+
+5. Dada a lista cores = ["azul", "verde", "amarelo", "vermelho"], remova o Ãºltimo elemento usando pop().
+
+6. Dada a lista valores = [9, 2, 5, 8, 1, 3], ordene-a em ordem crescente usando sort().
+
+7. Dada a lista valores = [9, 2, 5, 8, 1, 3], ordene-a em ordem decrescente usando sort(reverse=True).
+
+8. Dada a lista numeros = [4, 8, 2, 8, 6, 8], encontre a posiÃ§Ã£o da primeira ocorrÃªncia do nÃºmero 8 usando index().
+
+9. Dada a lista letras = ['a', 'b', 'c', 'a', 'd', 'a'], conte quantas vezes a letra 'a' aparece usando count().
+
+10. Dada a lista dados = [12, 34, 56, 78], remova todos os elementos usando clear().
+
+============================================================================================================
+
+11. Dada a lista lista_original = [1, 2, 3, 4, 5], crie uma cÃ³pia usando copy() e altere a cÃ³pia sem modificar a original.
+
+12. Dada a lista valores = [3, 7, 3, 8, 3, 5, 3], remova todas as ocorrÃªncias do nÃºmero 3 sem usar remove().
+
+13. Dada a lista notas = [7, 5, 9, 10, 6, 8], encontre o menor e o maior valor usando min() e max().
+
+14. Dada a lista precos = [15.5, 22.3, 10.8, 18.7], calcule o total usando sum().
+
+15. Dadas as listas a = [1, 2, 3] e b = [4, 5, 6], adicione os elementos de b em a usando extend().
+
+16. Dada a lista dias = ["segunda", "terÃ§a", "quarta", "quinta", "sexta"], inverta a ordem usando reverse().
+
+17. Dada a lista numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], remova todos os nÃºmeros pares.
+
+18. Dada a lista idades = [15, 20, 25, 30, 35], substitua o valor 25 por 27.
+
+19. Dada a lista alunos = ["JoÃ£o", "Maria", "Pedro", "Ana"], verifique se "Carlos" estÃ¡ na lista usando in.
+
+20. Dada a lista itens = [], verifique se ela estÃ¡ vazia usando len().
+
+============================================================================================================
+
+21. Dada a lista palavras = ["Python", "Java", "C", "Ruby", "JavaScript"], crie uma nova lista apenas com palavras com mais de 5 letras.
+
+22. Dada a lista numeros = [2, 4, 6, 8, 10], multiplique todos os valores por 2 e armazene em uma nova lista.
+
+23. Crie um programa que peÃ§a ao usuÃ¡rio para digitar 5 nÃºmeros e os armazene em uma lista. Depois, ordene os nÃºmeros em ordem crescente.
+
+24. Crie um programa que peÃ§a ao usuÃ¡rio para digitar nÃºmeros atÃ© que ele digite 0, armazenando-os em uma lista e depois exibindo a lista completa.
+
+25. Dada a lista valores = [1, 2, 3, 4, 5], crie uma nova lista com os quadrados desses nÃºmeros ([1, 4, 9, 16, 25]).
+
+26. Dado o texto "Python Ã© uma linguagem poderosa e divertida", transforme a frase em uma lista de palavras usando split().
+
+27. Crie um programa que peÃ§a ao usuÃ¡rio para digitar 10 nÃºmeros e remova todas as ocorrÃªncias de um nÃºmero especÃ­fico escolhido pelo usuÃ¡rio.
+
+28. Dada a lista de alunos e notas dados = [("JoÃ£o", 7), ("Maria", 9), ("Pedro", 6), ("Ana", 8)], ordene a lista com base na nota.
+
+29. Dada a lista de listas original = [[1, 2], [3, 4]], crie uma cÃ³pia profunda com deepcopy() para evitar alteraÃ§Ãµes indesejadas.
+
+30. Dado o texto "A prÃ¡tica leva Ã  perfeiÃ§Ã£o. A repetiÃ§Ã£o traz aprendizado", conte quantas vezes cada palavra aparece e armazene os resultados em um dicionÃ¡rio.

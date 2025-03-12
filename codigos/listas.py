@@ -113,16 +113,23 @@ original = [[1, 2], [3, 4]]
 copia = copy.deepcopy(original)
 print(copia)
 
-"""
 ######################################
-#dicionario
-
+#Contar quantas vezes cada caractere aparece
 from collections import Counter
 
 texto = "A prática leva à perfeição. A repetição traz aprendizado"
 counter = Counter(texto)
 print(counter)
 
+"""
+######################################
+estoque = [10, 20, 30, 40, 50]
+produtos = ["coca", "pepsi", "guarana", "skol"]
+nivel_minimo = 30
+
+for i, quant in enumerate(estoque):
+    if quant < nivel_minimo:
+        print(f"O produto {produtos[i]} está abaixo do nível mínimo. tem apenas {quant} unidades")
 
 
 
