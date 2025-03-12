@@ -116,11 +116,20 @@ print(copia)
 """
 ######################################
 #dicionario
-texto = "A prática leva à perfeição. A repetição traz aprendizado"
 
-for i in texto:
-    if i in texto:
-        print(texto.count(i))
+from collections import Counter
+
+texto = "A prática leva à perfeição. A repetição traz aprendizado"
+counter = Counter(texto)
+print(counter)
+
+
+
+
+
+
+    
+    
 
 
 
