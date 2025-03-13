@@ -2,28 +2,34 @@
 
 ### FUNÇÕES
 #verificar se é positivo ou negativo
-def positivoNegativo(num):
+def positivoNegativo():
+    num = int(input("Digite um número: "))
     if num > 0:
         print("Positivo")
     else:
         print("Negativo")
 
 #verificar se é par ou ímpar
-def parImpar(num):
+def parImpar():
+    num = int(input("Digite um número: "))
     if num % 2 == 0:
         print("O número informado é par")
     else:
         print("“O número informado é ímpar")
 
 #Se é múltiplo de 3
-def multiploDeTres(num):
+def multiploDeTres():
+    num = int(input("Digite um número: "))
     if num % 3 == 0:
         print("O número informado é múltiplo de 3")
     else:
         print("O número informado NÃO é múltiplo de 3")
 
 #Se é maior, menor ou igual
-def maiorMenorIgual(num1, num2):
+def maiorMenorIgual():
+    num1 = int(input("Digite um número: "))
+    num2 = int(input("Digite outro número: "))
+
     if num1 == num2:
         print(f"Os números {num1} e {num2} são iguais")
     elif num1 > num2:
@@ -32,7 +38,11 @@ def maiorMenorIgual(num1, num2):
         print(f"O número {num2} é maior")
 
 #Se é maior
-def maiorNumero(num1, num2, num3):
+def maiorNumero():
+    num1 = int(input("Digite um número: "))
+    num2 = int(input("Digite outro número: "))
+    num3 = int(input("Digite outro número: "))
+    
     if num1 > num2 and num1 > num3:
         print(f"O número {num1} é o maior")
     elif num2 > num3:
@@ -41,14 +51,18 @@ def maiorNumero(num1, num2, num3):
         print(f"O número {num3} é o maior")
 
 #Se é maior ou menor de idade
-def deMaiorDeMenor(idade):
+def deMaiorDeMenor():
+    idade = int(input("Digite sua idade: "))
+
     if idade >= 18:
         print(f"Você possui {idade} anos, já é de maior")
     else:
         print(f"Você possui {idade} anos, ainda é de menor")
 
 #Vogal ou Consoante
-def vogalConsoante(letra):
+def vogalConsoante():
+    letra = input("Digite uma letra: ").lower()
+
     vogais = ['a', 'e', 'i', 'o', 'u']
     
     consoante = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 
@@ -63,7 +77,9 @@ def vogalConsoante(letra):
         print("Não é vogal ou consoante")
 
 #Nome do dia da semana
-def diaSemana(num):
+def diaSemana():
+    num = int(input("Digite o dia da semana (1 a 7): "))
+
     if num == 1:
         print('domingo')
     elif num == 2:
@@ -82,7 +98,9 @@ def diaSemana(num):
         print("Digite um número válido.")
 
 #Dias do mês
-def diaMes(num):
+def diaMes():
+    num = int(input("Digite o mês (1 a 12): "))
+
     if num == 1:
         print('janeiro tem 31 dias')
     elif num == 2:
@@ -111,14 +129,18 @@ def diaMes(num):
         print("Digite um número válido.")
 
 #Se o ano é bissexto
-def anoBissexto(ano):
+def anoBissexto():
+    ano = int(input("Digite o ano: "))
+
     if ano % 4 == 0:
         print(f"O ano {ano} é bissexto")
     else:
         print(f"O ano {ano} NÃO é bissexto")
 
 #Pontuação de um jogo
-def pontuacaoJogo(pontuacao):
+def pontuacaoJogo():
+    pontuacao = int(input("Digite sua pontuação: "))
+
     if pontuacao < 50:
         print("Ruim")
     elif pontuacao >= 50 and pontuacao <= 70:
@@ -131,7 +153,9 @@ def pontuacaoJogo(pontuacao):
         print("Não entendi!")
 
 #Verificar Quadrante com coordenadas
-def coordenada(x, y):
+def coordenada():
+    x = float(input("Digite o valor do eixo x: "))
+    y = float(input("Digite o valor do eixo y: "))
     
     if x > 0 and y > 0:
         print(f"As coordenadas {x} e {y} estão no Quadrante 1")
@@ -170,56 +194,55 @@ escolha = int(input("Digite um numero: "))
 
 if escolha == 1:
     print("----Positivo ou Negativo----")
-    num = int(input("Digite um número: "))
-    positivoNegativo(num)
+    positivoNegativo()
+
 elif escolha == 2:
     print("--------Par ou Ímpar--------")
-    num = int(input("Digite um número: "))
-    parImpar(num)
+    parImpar()
+
 elif escolha == 3:
     print("--------Múltiplo de 3--------")
-    num = int(input("Digite um número: "))
-    multiploDeTres(num)
+    multiploDeTres()
+
 elif escolha == 4:
     print("----Maior, menor ou igual----")
-    num1 = int(input("Digite um número: "))
-    num2 = int(input("Digite outro número: "))
-    maiorMenorIgual(num1, num2)
+    maiorMenorIgual()
+
 elif escolha == 5:
     print("---------Maior número---------")
-    num1 = int(input("Digite um número: "))
-    num2 = int(input("Digite outro número: "))
-    num3 = int(input("Digite outro número: "))
-    maiorNumero(num1, num2, num3)
+    maiorNumero()
+
 elif escolha == 6:
     print("----Maior ou menor de idade----")
-    idade = int(input("Digite sua idade: "))
-    deMaiorDeMenor(idade)
+    deMaiorDeMenor()
+
 elif escolha == 7:
     print("------Vogal ou Consoante-------")
-    letra = input("Digite uma letra: ").lower()
-    vogalConsoante(letra)
+    vogalConsoante()
+
 elif escolha == 8:
     print("------Nome do dia da semana-------")
-    num = int(input("Digite o dia da semana (1 a 7): "))
-    diaSemana(num)
+    diaSemana()
+
 elif escolha == 9:
     print("---------Dias do mês-----------")
-    num = int(input("Digite o mês (1 a 12): "))
-    diaMes(num)
+    diaMes()
+
 elif escolha == 10:
     print("----------Ano Bissexto-----------")
-    ano = int(input("Digite o ano: "))
-    anoBissexto(ano)
+    anoBissexto()
+
 elif escolha == 11:
     print("------Pontuação de um jogo-------")
-    pontuacao = int(input("Digite sua pontuação: "))
-    pontuacaoJogo(pontuacao)
+    pontuacaoJogo()
+
 elif escolha == 12:
     print("------Verificar Coordenada-------")
-    x = float(input("Digite o valor do eixo x: "))
-    y = float(input("Digite o valor do eixo y: "))
-    coordenada(x, y)
+    coordenada()
+
+elif escolha == 0:
+    print("Saindo...")
+
 else:
-    print("Não compreendi sua resposta!")
+    print("Digite uma opção válida!")
 

@@ -62,49 +62,45 @@ def ordenar():
 
 
 ###CORPO PRINCIPAL
-def main():
-    #MENU
-    print("---------OPÇÕES---------")
-    print("1. Alunos Acima da média")
-    print("2. Mais de 10")
-    print("3. Salário Alto")
-    print("4. Aluno e idade")
-    print("5. elementos com mais de 5 letras")
-    print("6. Ordenar por nota")
-    print("0. Para sair")
+print("---------OPÇÕES---------")
+print("1. Alunos Acima da média")
+print("2. Mais de 10")
+print("3. Salário Alto")
+print("4. Aluno e idade")
+print("5. elementos com mais de 5 letras")
+print("6. Ordenar por nota")
+print("0. Para sair")
 
-    escolha = int(input("Digite um numero: "))
+escolha = int(input("Digite um numero: "))
 
-    if escolha == 1:
-        print("----Alunos Acima da Média----")
-        acimaMedia() 
+if escolha == 1:
+    print("----Alunos Acima da Média----")
+    acimaMedia() 
 
-    elif escolha == 2:
-        print("----Mais de 10----")
-        maisDeDez()
-        
-    elif escolha == 3:
-        print("----Salário alto----")
-        salarioAlto()
-        
-    elif escolha == 4:
-        print("----Aluno e idade----")
-        alunoIdade()
+elif escolha == 2:
+    print("----Mais de 10----")
+    maisDeDez()
     
-    elif escolha == 5:
-        print("----Elementos com mais de 5 letras----")
-        maisDeCinco()
+elif escolha == 3:
+    print("----Salário alto----")
+    salarioAlto()
+    
+elif escolha == 4:
+    print("----Aluno e idade----")
+    alunoIdade()
 
-    elif escolha == 6:
-        print("----Ordenar por nota----")
-        ordenar()
+elif escolha == 5:
+    print("----Elementos com mais de 5 letras----")
+    maisDeCinco()
 
-    elif escolha == 0:
-        print("---Saindo---")
-        
-    else:
-        print("Digite uma opção válida.")
+elif escolha == 6:
+    print("----Ordenar por nota----")
+    ordenar()
+
+elif escolha == 0:
+    print("---Saindo---")
+    
+else:
+    print("Digite uma opção válida.")
             
-            
-main()
 

@@ -190,3 +190,9 @@ elif escolha == 9:
     print("----Tempo de Jogo----")
     tempoJogo()
 
+elif escolha == 0:
+    print("Saindo....")
+
+else:
+    print("Digite um valor válido")
+

@@ -166,80 +166,76 @@ def lista():
 
 
 ###CORPO PRINCIPAL
-def main():
-    #MENU
-    print("---------OPÇÕES---------")
-    print("1. Contador e Soma")
-    print("2. Quantidade de números positivos")
-    print("3. Soma de números")
-    print("4. Validação de Senha")
-    print("5. Contagem Regressiva")
-    print("6. Múltíplo de Três")
-    print("7. Cálculo fatorial")
-    print("8. Maior que dez")
-    print("9. Soma e média")
-    print("10. Pares e Impares em um intervalo")
-    print("11. Maior e menor")
-    print("12. Ordenação em lista")
-    print("0. Sair")
+print("---------OPÇÕES---------")
+print("1. Contador e Soma")
+print("2. Quantidade de números positivos")
+print("3. Soma de números")
+print("4. Validação de Senha")
+print("5. Contagem Regressiva")
+print("6. Múltíplo de Três")
+print("7. Cálculo fatorial")
+print("8. Maior que dez")
+print("9. Soma e média")
+print("10. Pares e Impares em um intervalo")
+print("11. Maior e menor")
+print("12. Ordenação em lista")
+print("0. Sair")
 
-    escolha = int(input("Digite um numero: "))
+escolha = int(input("Digite um numero: "))
+
+if escolha == 1:
+    print("----Contador e Soma----")
+    contadorSoma()
+
+elif escolha == 2:
+    print("----Quantidade de números positivos----")
+    leituraNumeros()
+
+elif escolha == 3:
+    print("----Soma de números----")
+    somaNumeros()
+
+elif escolha == 4:
+    print("----Validação de Senha----")
+    validacaoSenha()
+
+elif escolha == 5:
+    print("----Contagem Regressiva----")
+    contagemRegressiva()
+
+elif escolha == 6:
+    print("----Múltíplo de Três----")
+    multiploTres()
+
+elif escolha == 7:
+    print("----Cálculo fatorial----")
+    fatorial()
+
+elif escolha == 8:
+    print("----Maior que dez----")
+    maiorQueDez()
+
+elif escolha == 9:
+    print("----Soma e Média----")
+    somaMedia()
+
+elif escolha == 10:
+    print("----Pares e Impares em um intervalo----")
+    parImpar()
+
+elif escolha == 11:
+    print("----Maior e menor----")
+    maiorMenor()
+
+elif escolha == 12:
+    print("----Ordenação em lista----")
+    lista()
+
+elif escolha == 0:
+    print("---Saindo---")
     
-    if escolha == 1:
-        print("----Contador e Soma----")
-        contadorSoma()
-
-    elif escolha == 2:
-        print("----Quantidade de números positivos----")
-        leituraNumeros()
-
-    elif escolha == 3:
-        print("----Soma de números----")
-        somaNumeros()
-
-    elif escolha == 4:
-        print("----Validação de Senha----")
-        validacaoSenha()
-
-    elif escolha == 5:
-        print("----Contagem Regressiva----")
-        contagemRegressiva()
-
-    elif escolha == 6:
-        print("----Múltíplo de Três----")
-        multiploTres()
-
-    elif escolha == 7:
-        print("----Cálculo fatorial----")
-        fatorial()
-
-    elif escolha == 8:
-        print("----Maior que dez----")
-        maiorQueDez()
-
-    elif escolha == 9:
-        print("----Soma e Média----")
-        somaMedia()
-
-    elif escolha == 10:
-        print("----Pares e Impares em um intervalo----")
-        parImpar()
-
-    elif escolha == 11:
-        print("----Maior e menor----")
-        maiorMenor()
-
-    elif escolha == 12:
-        print("----Ordenação em lista----")
-        lista()
-
-    elif escolha == 0:
-        print("---Saindo---")
-        
-    else:
-        print("Digite uma opção válida.")
+else:
+    print("Digite uma opção válida.")
 
 
-
-main()
 

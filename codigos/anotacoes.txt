@@ -32,7 +32,12 @@ from collections import Counter = biblioteca collections com a função counter 
 strip() = tira espaços em branco
 
 #################################
+#Contar quantas vezes cada caractere aparece
+from collections import Counter
 
+texto = "A prática leva à perfeição. A repetição traz aprendizado"
+counter = Counter(texto)
+print(counter)
 
 
 

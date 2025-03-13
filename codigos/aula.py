@@ -46,6 +46,7 @@ def areaTriangulo():
     print(f"A área é: {area}")
 
 ###CORPO PRINCIPAL
+
 print("---Escolha a figura geométrica que deseja calcular a área---")
 print("1. Circulo")
 print("2. Losângulo")
@@ -53,8 +54,7 @@ print("3. Quadrado")
 print("4. Retângulo")
 print("5. Trapézio")
 print("6. Triângulo")
-
-
+print("0. Sair")
 
 escolha = int(input("Digite um numero: "))
 
@@ -86,5 +86,11 @@ elif escolha == 5:
 elif escolha == 6:
     print("----Triângulo----")
     areaTriangulo()
+
+elif escolha == 0:
+    print("Saindo...")
+
+else:
+    print("Escolha uma opção válida.")
     
 

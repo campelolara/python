@@ -80,52 +80,50 @@ def divisores():
 
         
 ### CORPO PRINCIPAL
-def main():
-    print("---------OPÇÕES---------")
-    print("1. Par e Impar dentro de um intervalor")
-    print("2. Tabuada de multiplicação")
-    print("3. Números ímpares entre 100 e 200")
-    print("4. Contador")
-    print("5. Soma dos números")
-    print("6. Fatorial")
-    print("7. Par e Impar de 1 até um número")
-    print("8. Divisores de um número")
+print("---------OPÇÕES---------")
+print("1. Par e Impar dentro de um intervalor")
+print("2. Tabuada de multiplicação")
+print("3. Números ímpares entre 100 e 200")
+print("4. Contador")
+print("5. Soma dos números")
+print("6. Fatorial")
+print("7. Par e Impar de 1 até um número")
+print("8. Divisores de um número")
 
-    escolha = int(input("Digite um numero: "))
+escolha = int(input("Digite um numero: "))
 
-    if escolha == 1:
-        print("----Par e Impar num intervalo----")
-        intervalo()
+if escolha == 1:
+    print("----Par e Impar num intervalo----")
+    intervalo()
 
-    elif escolha == 2:
-        print("----Tabuada de multiplicação----")
-        tabuadaMultiplicacao()
+elif escolha == 2:
+    print("----Tabuada de multiplicação----")
+    tabuadaMultiplicacao()
 
-    elif escolha == 3:
-        print("----Números ímpares entre 100 e 200----")
-        numerosImpares()
+elif escolha == 3:
+    print("----Números ímpares entre 100 e 200----")
+    numerosImpares()
 
-    elif escolha == 4:
-        print("----Contador----")
-        contador()
+elif escolha == 4:
+    print("----Contador----")
+    contador()
 
-    elif escolha == 5:
-        print("----Soma dos números----")
-        soma()
+elif escolha == 5:
+    print("----Soma dos números----")
+    soma()
 
-    elif escolha == 6:
-        print("----Fatorial----")
-        fatorial()
+elif escolha == 6:
+    print("----Fatorial----")
+    fatorial()
 
-    elif escolha == 7:
-        print("----Par e Impar de 1 até um número----")
-        parImpar()
+elif escolha == 7:
+    print("----Par e Impar de 1 até um número----")
+    parImpar()
 
-    elif escolha == 8:
-        print("----Divisores de um número----")
-        divisores()
+elif escolha == 8:
+    print("----Divisores de um número----")
+    divisores()
 
-main()
 
 
 
