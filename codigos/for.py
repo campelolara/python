@@ -1,28 +1,9 @@
-"""
-#ex001
-numeros = [10, 20, 30, 40, 50]
-numerosDobro = []
-for item in numeros:
-    numerosDobro.append(item * 2)
-
-print("==================Saída====================")
-print(f"Lista: {numeros}")
-print(f"Lista com valores dobrados: {numerosDobro}")
-print("===========================================")
-
-
-#ex002
-listaSupermercado = ["Arroz", "Farinha", "Açúcar", "Maionese", "Ketchup", "Laranja", "Maçã", "Uva", "Carne", "Pão"]
-print("==============Lista de Compras==============")
-for produto in listaSupermercado:
-    print(f"Produto: {produto}")
-
-"""
-
-
 ### FUNÇÕES 
 #ex001 = Números pares e ímpares de um intervalo
-def intervalo(valorInicial, valorFinal):
+def intervalo():
+    valorInicial = int(input("Digite o valor inicial: "))
+    valorFinal = int(input("Digite o valor final: "))
+
     lista_par = []
     lista_impar = []
     for i in range(valorInicial, valorFinal+1):
@@ -34,7 +15,8 @@ def intervalo(valorInicial, valorFinal):
     print(lista_impar)
 
 #ex002 = Tabuada de Multiplicação
-def tabuadaMultiplicacao(num):
+def tabuadaMultiplicacao():
+    num = int(input("Digite um valor: "))
     for i in range(11):
         multiplicacao = num * i
         print(f"{num} x {i} = {multiplicacao}")
@@ -48,7 +30,8 @@ def numerosImpares():
     print(numImpar)
 
 #ex004 = Contador
-def contador(num):
+def contador():
+    num = int(input("Digite um valor: "))
     cont = []
     for i in range(num+1):
         cont.append(i)
@@ -63,7 +46,8 @@ def soma():
     print(f"A soma dos números é: {sum(numeros)}")
 
 #ex006 = fatorial
-def fatorial(num):
+def fatorial():
+    num = int(input("Digite um valor: "))
     #fatoria inicia com 1
     fat = 1
     #para cada numero de 1 até num
@@ -72,7 +56,8 @@ def fatorial(num):
     print(fat)
 
 #ex007 = Numeros pares e ímpares de 1 até num
-def parImpar(num):
+def parImpar():
+    num = int(input("Digite um valor: "))
     lista_par = []
     lista_impar = []
     for i in range(1, num+1):
@@ -84,7 +69,8 @@ def parImpar(num):
     print(f"Os números ímpares são: {lista_impar}")
 
 #ex008 = Divisores de um Número
-def divisores(num):
+def divisores():
+    num = int(input("Digite um valor: "))
     lista_divisores = []
     for i in range(1, num+1):
         if num % i == 0:
@@ -94,56 +80,52 @@ def divisores(num):
 
         
 ### CORPO PRINCIPAL
-print("---------OPÇÕES---------")
-print("1. Par e Impar dentro de um intervalor")
-print("2. Tabuada de multiplicação")
-print("3. Números ímpares entre 100 e 200")
-print("4. Contador")
-print("5. Soma dos números")
-print("6. Fatorial")
-print("7. Par e Impar de 1 até um número")
-print("8. Divisores de um número")
+def main():
+    print("---------OPÇÕES---------")
+    print("1. Par e Impar dentro de um intervalor")
+    print("2. Tabuada de multiplicação")
+    print("3. Números ímpares entre 100 e 200")
+    print("4. Contador")
+    print("5. Soma dos números")
+    print("6. Fatorial")
+    print("7. Par e Impar de 1 até um número")
+    print("8. Divisores de um número")
 
-escolha = int(input("Digite um numero: "))
+    escolha = int(input("Digite um numero: "))
 
-if escolha == 1:
-    print("----Par e Impar num intervalo----")
-    numI = int(input("Digite o valor inicial: "))
-    numF = int(input("Digite o valor final: "))
-    intervalo(numI, numF)
+    if escolha == 1:
+        print("----Par e Impar num intervalo----")
+        intervalo()
 
-elif escolha == 2:
-    print("----Tabuada de multiplicação----")
-    num = int(input("Digite um valor: "))
-    tabuadaMultiplicacao(num)
+    elif escolha == 2:
+        print("----Tabuada de multiplicação----")
+        tabuadaMultiplicacao()
 
-elif escolha == 3:
-    print("----Números ímpares entre 100 e 200----")
-    numerosImpares()
+    elif escolha == 3:
+        print("----Números ímpares entre 100 e 200----")
+        numerosImpares()
 
-elif escolha == 4:
-    print("----Contador----")
-    num = int(input("Digite um valor: "))
-    contador(num)
+    elif escolha == 4:
+        print("----Contador----")
+        contador()
 
-elif escolha == 5:
-    print("----Soma dos números----")
-    soma()
+    elif escolha == 5:
+        print("----Soma dos números----")
+        soma()
 
-elif escolha == 6:
-    print("----Fatorial----")
-    num = int(input("Digite um número:"))
-    fatorial(num)
+    elif escolha == 6:
+        print("----Fatorial----")
+        fatorial()
 
-elif escolha == 7:
-    print("----Par e Impar de 1 até um número----")
-    num = int(input("Digite um número:"))
-    parImpar(num)
+    elif escolha == 7:
+        print("----Par e Impar de 1 até um número----")
+        parImpar()
 
-elif escolha == 8:
-    print("----Divisores de um número----")
-    num = int(input("Digite um número:"))
-    divisores(num)
+    elif escolha == 8:
+        print("----Divisores de um número----")
+        divisores()
+
+main()
 
 
 

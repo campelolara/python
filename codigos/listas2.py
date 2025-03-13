@@ -1,162 +1,110 @@
+
 ###FUNÇÕES
-##Funções de ajuda
-#lista de string
-def listaString():
-    lista = []
-    item = input("Digite um item para adicionar a lista (espaço finaliza): ")
-    
-    while item != " ":
-        lista.append(item)
-        item = input("Digite um item para adicionar a lista (espaço finaliza): ")
-
-    return lista
-
-#lista numérica
-def listaNum():
-    numeros = []
-    num = float(input("Digite um número (0 finaliza): "))
-    
-    while num != 0:
-        numeros.append(num)
-        num = float(input("Digite um número (0 finaliza): "))
-
-    return numeros
-
-#ex001 = Fazer uma lista 
-def lista():
-    lista_digitada = listaString()
-
-    print("Sua lista é: ")
-    for i in lista_digitada:
-        print(i)
-
-#ex002 = Soma
-def soma():
-    numeros_digitados = listaNum()
-    print(f"A soma dos números é: {sum(numeros_digitados)}")
-
-#ex003 = múltiplos de 5
-def multiplo():
-    numeros_digitados = listaNum()
-    listaMultiplos = []
-
-    for i in numeros_digitados:
-        if i % 5 == 0:
-            listaMultiplos.append(i)
-
-    print(f"Os múltiplos de 5 são: {listaMultiplos}")
-
-#ex004 = multiplicar por 2
-def dobrar():
-    numeros_digitados = listaNum()
-    dobrados = []
-    
-    for i in numeros_digitados:
-        dobrados.append(i * 2)
-
-    print(f"Os números dobrados ficam: {dobrados}")
-
-#ex005 = transformar em maiúscula
-def transformaString():
-    lista_digitada = listaString()
-    emMinusculo = []
-    emMaiusculo = []
-    
-    for i in lista_digitada:
-        emMinusculo.append(i.lower())
-        emMaiusculo.append(i.upper())
-
-    print(f"Tudo minúsculo é: {emMinusculo}")
-    print(f"Tudo maiúsculo é: {emMaiusculo}")
-
-#ex006 = retirar espaçoes extras nas palavras
-def removerEspaco():
-    lista_digitada = listaString()
-    lista_sem_espaco = []
-
-    for i in lista_digitada:
-        lista_sem_espaco.append(i.strip())
-
-    print(f"Com espaço: {lista_digitada}")
-    print(f"Sem espaço: {lista_sem_espaco}")
-
-def imprimirPalavra():
-    lista_digitada = listaString()
-
-    for i in lista_digitada:
-        if i[0] == "A" or i[0] == "a":
-            print(i)
-
-def conversaoTemperatura():
-    numeros_digitados = listaNum()
-    convertidos = []
-
-    for i in numeros_digitados:
-        convert_f = i * (9 / 5) + 32
-        convertidos.append(convert_f)
-
-    print(f"Em Celsius: {numeros_digitados}")
-    print(f"Em Fahrenheit: {convertidos}")
-
+#ex001 = Alunos Acima da Média
 def acimaMedia():
-    numeros_digitados = listaNum()
+    alunos = ['Ana', 'Bruno', 'Carlos', 'Diana', 'Eduardo']
+    notas = [6.5, 8.0, 7.2, 5.5, 9.1]
 
-    for i in numeros_digitados:
-        if i >= 7:
-            print(i)
+    for i, nota in enumerate(notas):
+        if nota >= 7:
+            print(f"O aluno {alunos[i]} passou com a nota: {nota}")
+        else:
+            print(f"O aluno {alunos[i]} não passou com a nota: {nota}")
 
+#ex002 = mais de dez
+def maisDeDez():
+    produtos = ['Sabão', 'Detergente', 'Shampoo', 'Condicionador', 'Escova']
+    precos = [3.5, 2.0, 15.0, 18.5, 8.0]
 
+    for i, preco in enumerate(precos):
+        if preco >= 10:
+            print(f"O produto {produtos[i]} tem o preço: {preco}")
+    
+#ex003 = Salário alto
+def salarioAlto():
+    funcionarios = ['João', 'Mariana', 'Carlos', 'Beatriz', 'Lucas']
+    salarios = [2800, 3500, 2700, 4200, 3100]
+
+    for i, salario in enumerate(salarios):
+        if salario >= 3000:
+            print(f"O funcionário {funcionarios[i]} tem o salário de: {salario}")
+
+#ex004 = Aluno e idade
+def alunoIdade():
+    alunos = ['Gabriel', 'Mariana', 'Sofia']
+    idades = [15, 17, 14]
+
+    for i, idade in enumerate(idades):
+        print(f"O aluno {alunos[i]} tem: {idade} anos.")
+
+#ex005 = elementos com mais de 5 letras
+def maisDeCinco():
+    palavras = ["Python", "Java", "C", "Ruby", "JavaScript"]
+    cinco_letras = []
+
+    for i in palavras:
+        if len(i) > 5:
+            cinco_letras.append(i)
+
+    print(palavras)
+    print(cinco_letras)
+
+#ex006 = Ordenar por nota
+def ordenar():
+    #ordenar por nota
+    #            [0]           [1]           [2]          [3]   
+    #           [0,1]         [0,1]         [0,1]        [0,1]
+    dados = [("João", 7), ("Maria", 9), ("Pedro", 6), ("Ana", 8)]
+
+    #o elemento 1 de cada tupla será a chave(key) de ordenação
+    dados.sort(key=lambda x: x[1])
+    print(dados)
 
 
 ###CORPO PRINCIPAL
-print("---------OPÇÕES---------")
-print("1. Fazer uma lista")
-print("2. Soma")
-print("3. Múltiplos de 5")
-print("4. Dobrar valores")
-print("5. Formatação de texto")
-print("6. Retirar espaço")
-print("7. Imprimir palavra")
-print("8. Celsius para Fahrenheit")
-print("9. Alunos acima da Média")
+def main():
+    #MENU
+    print("---------OPÇÕES---------")
+    print("1. Alunos Acima da média")
+    print("2. Mais de 10")
+    print("3. Salário Alto")
+    print("4. Aluno e idade")
+    print("5. elementos com mais de 5 letras")
+    print("6. Ordenar por nota")
+    print("0. Para sair")
 
+    escolha = int(input("Digite um numero: "))
 
-escolha = int(input("Digite um numero: "))
+    if escolha == 1:
+        print("----Alunos Acima da Média----")
+        acimaMedia() 
 
-if escolha == 1:
-    print("----Fazer uma lista----")
-    lista()
-
-elif escolha == 2:
-    print("----Soma----")
-    soma()
-
-elif escolha == 3:
-    print("----Múltiplos de 5----")
-    multiplo()
-
-elif escolha == 4:
-    print("----Dobrar valores----")
-    dobrar()
-
-elif escolha == 5:
-    print("----Formatação de texto----")
-    transformaString()
-
-elif escolha == 6:
-    print("----Retirar espaço----")
-    removerEspaco()
-
-elif escolha == 7:
-    print("----Imprimir palavra----")
-    imprimirPalavra()
-
-elif escolha == 8:
-    print("----Celsius para Fahrenheit----")
-    conversaoTemperatura()
-
-elif escolha == 9:
-    print("----Alunos acima da Média----")
-    acimaMedia()
-
+    elif escolha == 2:
+        print("----Mais de 10----")
+        maisDeDez()
+        
+    elif escolha == 3:
+        print("----Salário alto----")
+        salarioAlto()
+        
+    elif escolha == 4:
+        print("----Aluno e idade----")
+        alunoIdade()
     
+    elif escolha == 5:
+        print("----Elementos com mais de 5 letras----")
+        maisDeCinco()
+
+    elif escolha == 6:
+        print("----Ordenar por nota----")
+        ordenar()
+
+    elif escolha == 0:
+        print("---Saindo---")
+        
+    else:
+        print("Digite uma opção válida.")
+            
+            
+main()
+

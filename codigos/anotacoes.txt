@@ -1,0 +1,40 @@
+append("valor") = insere no final
+extend([1, 2, 3]) = insere vários elementos
+insert(2, "valor") = insere em uma posição específica
+
+remove() = por elemento, se não especificado remove o primeiro
+del = por indice, se não especificado remove a lista inteira
+pop() = por indice, se não especificado remove o último
+clear() = limpa a lista
+
+sort() = ordena os elementos
+reverse() = inverte a ordem
+
+index() = encontra a posição
+
+count() = conta os elementos
+
+copy() = cria uma cópia da lista
+deepcopy() = para listas compostas  //com a biblioteca copy
+
+min() e max() = valor minimo e valor maximo
+
+sum() = soma os valores
+
+numeros[0] = 20    = substituir um valor
+
+len() = comprimento da lista
+
+var.split() = transforma uma str em lista
+
+from collections import Counter = biblioteca collections com a função counter (conta quantas vezes cada caractere aparece)
+
+strip() = tira espaços em branco
+
+#################################
+
+
+
+
+
+
