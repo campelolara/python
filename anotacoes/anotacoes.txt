@@ -1,0 +1,150 @@
+type() = ver o tipo de dado
+
+#retorne tru or false
+.isspace() = verifica se só tem espaço
+.isnumeric() = verifica se é número
+.isalpha() = verifica se é alfabéto
+.isalnum() = verifica se é alfanumérico
+.isupper() e .islower() = verifica se esta tudo maiusculo ou minusculo
+.istitle() = verifica se ta capitalizada #primeira maius. e o resto minusc.
+
+#############################
+
+Métodos
+import math               = importar todo o método
+from math import sqrt     = importar uma função específica
+
+#############################
+
+Formatação de texto
+var[0]      = caractere específico
+var[1:3]    = de 0 a 2
+var[2:10:2] = de 0 a 9 pulando de 2 em 2
+var[:5]     = início até o 4
+var[15:]    = 15 até o final
+var[9::3]   = começa do 9 até o final, pulando de 3 em 3
+
+len() = comprimento da string
+.count() = conta quantos caracteres, quando tiver um parâmetro conta esse específico 
+.find() = quantas vezes encontra tal coisa
+.replase( , ) = trocar coisas
+.upper() e .lower() = maiúscula e minúscula
+.capitalize() = primeira maius. resto minusc
+.title() = capitalize palavra por palavra
+.strip() = tira espaços em branco 
+.rstrip() .lstrip() = right e left
+.split() = transforma uma str em lista
+'-'.join(frase) = junta a frase e separa ela com -
+
+#############################
+
+Estrutura Condicional - if
+if condicao:
+    <bloco>
+elif:
+    <bloco>
+else:
+    <bloco>
+
+Estrutura de Repetição - for
+for i in <intervalo>:
+     <bloco>
+
+Estrutura de Repetição - while
+n = 1
+while n <= 5:
+    <bloco>
+    n += 1
+
+Interrompendo repetições while
+while True:
+   <bloco>
+   if <condicao>:
+      break
+
+#############################
+
+Listas
+nome = []
+
+append("valor") = insere no final
+extend([1, 2, 3]) = insere vários elementos
+insert(2, "valor") = insere em uma posição específica
+
+remove() = por elemento, se não especificado remove o primeiro
+del = por indice, se não especificado remove a lista inteira
+pop() = por indice, se não especificado remove o último
+clear() = limpa a lista, tupla ou dicionario
+
+.sort() = ordena os elementos, modificando a lista em si 
+.sorted() = ordena os elementos, construindo uma nova lista ordenada
+.reverse() ou .sort(reverse=True) = inverte a ordem 
+
+#############################
+
+Tuplas
+listas imutáveis
+nome = ()
+
+#############################
+
+cores em python
+\003[style;text;bakcgroundm
+
+possíveis valores pro style:
+0 = none
+1 = bold
+4 = underline
+7 = negative
+
+possíveis valores pro text:
+30 = branco
+31 = vermelho
+32 = verde
+33 = amarelo
+34 = azul
+35 = roxo
+36 = ciano
+37 = cinza
+//utilizar bibliotecas para mais
+
+possíveis valores pro background:
+40, 41, 42, 43, 44, 45, 46, 47 = mesmos valores do text
+
+ex.: print('\033[31;43mOlá, Mundo!')
+print('\033[31;43mOlá, Mundo!\033[m') //pra barra não chegar no final
+
+
+#############################
+
+Conjuntos
+coleção de elementos únicos, é definido usando chaves ou a função set. utilizados para união, interseção, diferença e remoção de duplicados
+numeros =[1,2,3,3]
+conjunto = set(numeros)
+print(conjunto)  // [1,2,3]
+
+
+
+
+
+index() = encontra a posição
+
+copy() = cria uma cópia da lista
+deepcopy() = para listas compostas  //com a biblioteca copy
+
+min() e max() = valor minimo e valor maximo
+
+sum() = soma os valores
+
+#################################
+#Contar quantas vezes cada caractere aparece
+from collections import Counter
+
+texto = "A prática leva à perfeição. A repetição traz aprendizado"
+counter = Counter(texto)
+print(counter)
+
+
+
+
+

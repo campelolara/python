@@ -1,0 +1,53 @@
+Dicionários
+nome = {
+    'chave': 'valor'
+}
+
+#Formas de pegar valor
+    dicionario[chave]
+    .get(chave)
+
+#Adicionar valor
+    dicionario[chave] = valor
+    dicionario.update({chave: valor, chave: valor})
+
+#chave e valor individuais
+carros = {'Honda': 30000, 'Civic': 40000, 'Fiat': 35000, 'S10': 100000, 'Uno': 50000}
+
+for chave, valor in carros.items():
+    print(chave, valor)
+
+
+#chave e valor em lista:
+carros = {'marcas': ['honda', 'civic', 'fiat'], 
+           'valores': [30000, 40000, 35000]}
+
+for marca, valor in zip(carros['marcas'], carros['valores']):
+    print(f"O carro de marca: {marca}, tem o valor de R${valor}")
+
+
+# fromkeys(chaves, valor_padrao) = dicionário com as chaves e o mesmo valor padrão para todas
+chaves = ('jan', 'fev', 'mar')
+vendas = 100
+vendas_mes = dict.fromkeys(chaves, vendas)
+print(vendas_mes)
+
+# .get('chave') = retorna o valor da chave especificada
+
+# .items() = Retorna uma lista em que cada item é uma tupla com (chave, valor)
+
+# .keys() = retona todas as chaves
+# .values() = retorna todos os valores
+
+# pop(chave) = Retira o item do dicionário e retorna o valor dele para ser usado
+<dicionario>
+var = dicionario.pop('chave') #retira a chave (e valor) do dicionário ao mesmo tempo que armazena o valor dele na variável
+
+# .popitem() = Retira o último item adicionado ao dicionário
+
+# .setdefault(chave, valor) = Retorna o valor da chave passada, mas caso a chave não exista, cria no dicionário o item com a chave e valor passados.
+
+# .update(dicionario) = Adiciona o dicionário passado como parâmetro ao dicionário original
+
+
+
