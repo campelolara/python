@@ -51,12 +51,39 @@ def vendaNotebook():
     venda_notebook = 0
     for produto in vendas_tecnologia:
         if 'notebook' in produto:
-            venda_notebook += 1
+            venda_notebook += vendas_tecnologia[produto]
 
     print(venda_notebook)
 
-vendaNotebook()
+#vendas acima de 5000
+def vendas():
+    vendas = {'notebook asus': 2450, 'iphone': 15000, 'samsung galaxy': 12000, 
+              'tv samsung': 10000, 'ps5': 14300, 'tablet': 1720, 'notebook dell': 17000, 
+              'ipad': 1000, 'tv philco': 2500, 'notebook hp': 1000}
+    
+    for produto, qtde in vendas.items():
+        if qtde > 5000:
+            print(f"{produto}: {qtde} unidades")
 
+
+    #for chave in vendas:
+        #if vendas[chave] >= 5000:
+            #print(f"{chave}: {vendas[chave]}")
+
+vendas()
+
+def chaveValor():
+    vendas = {'notebook asus': 2450, 'iphone': 15000, 'samsung galaxy': 12000, 
+              'tv samsung': 10000, 'ps5': 14300, 'tablet': 1720, 'notebook dell': 17000, 
+              'ipad': 1000, 'tv philco': 2500, 'notebook hp': 1000}
+    
+    chaves = vendas.keys()
+    valores = vendas.values()
+    print(list(chaves)) #chave em forma de lista
+    print(valores) 
+
+
+chaveValor()
 
 
 
