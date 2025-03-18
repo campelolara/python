@@ -49,5 +49,9 @@ var = dicionario.pop('chave') #retira a chave (e valor) do dicionário ao mesmo 
 
 # .update(dicionario) = Adiciona o dicionário passado como parâmetro ao dicionário original
 
+#A partir de lista:
+lista_tuplas = zip(lista1, lista2)
+dicionario = dict(lista_tuplas)
+
 
 
